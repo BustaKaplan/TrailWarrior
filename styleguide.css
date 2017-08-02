@@ -1,0 +1,57 @@
+header{
+  background-color: white;
+  color: #669933;
+  margin: 0px;
+  padding: 0px;
+}
+.subheader{
+  color: #669933;
+
+}
+h1{
+  font-family: 'Scope One', serif;
+  background-color: white;
+  color: #669933;
+
+}
+body{
+  background-color: #669933;
+}
+H2{
+  font-family: 'Scope One', serif;
+  color: white;
+}
+H4{
+  font-family: 'Droid Sans', sans-serif;
+  color: white;
+}
+.color{
+  color:white;
+  font-weight: bold;
+
+}
+.color-combos{
+  background: : white;
+  display: flex;
+}
+.color{
+  padding: .5em;
+  border-style: solid;
+  border-color: black;
+}
+#green{
+  background-color: #669933;
+}
+#gray{
+  background-color: #49475B;
+}
+#purple{
+  background-color: #953255;
+}
+#black{
+  background-color: #14080E;
+}
+#white{
+  background-color: #FFFFFF;
+  color: black;
+}
