@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CommentBox from './CommentBox.js';
 
 class App extends Component {
   render() {
@@ -24,7 +25,7 @@ class App extends Component {
 
           <h2>The Never Summer Wilderness</h2>
           <img src={'./Template.jpg'} alt={"Trail Photo"} width={500}/>
-          <h4> "H4, H5, H6 and P's will be 'Droid Sans', sans-serif "</h4>
+          <h4> Trail Miles: 19 <br/> Elevation Gain: 6,000 <br/> Location: Grand Lake, CO</h4>
           <h4> Color Scheme </h4>
           <div className="color-combos">
             <div className = "color" id="green"> #669933 </div>
@@ -33,10 +34,10 @@ class App extends Component {
             <div className = "color" id = "black"> #14080E </div>
             <div className = "color" id = "white"> #FFFFFF </div>
           </div>
-      </body>
-
-    );
-  }
-}
+          <CommentBox />
+        </body>
+        );
+      }
+    }
 
 export default App;
