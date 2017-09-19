@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import CommentBox from './CommentBox.js';
+import CommentForm from './CommentForm.js';
 
 class App extends Component {
   render() {
@@ -35,6 +36,7 @@ class App extends Component {
             <div className = "color" id = "white"> #FFFFFF </div>
           </div>
           <CommentBox />
+          <CommentForm />
         </body>
         );
       }
