@@ -11,13 +11,13 @@ render () {
   const commentCount = `{comment.length}`;
   return (
     <div className = "comment-box">
-      <CommentForm addComment={this._addComment.bind(this)} />
       <h3>COMMENTS</h3>
       <h4 className = "commentCount">{this._getCommentsTitle(comment.length)} </h4>
       <div className = "comments">
+        <comments/>
         {comment}
       </div>
-      <CommentForm />
+      <CommentForm addComment={this._addComment.bind(this)} />
     </div>
   );
 }

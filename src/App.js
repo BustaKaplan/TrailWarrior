@@ -25,7 +25,7 @@ class App extends Component {
           </header>
 
           <h2>The Never Summer Wilderness</h2>
-          <img src={'./Template.jpg'} alt={"Trail Photo"} width={500}/>
+          <img className= "trail photo" src={require('./Template.jpg')} alt="Trail Photo" width={500}/>
           <h4> Trail Miles: 19 <br/> Elevation Gain: 6,000 <br/> Location: Grand Lake, CO</h4>
           <h4> Color Scheme </h4>
           <div className="color-combos">

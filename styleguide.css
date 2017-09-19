@@ -1,4 +1,7 @@
-header{
+body{
+  margin: 10px;
+}
+  header{
   background-color: white;
   color: #669933;
   margin: 0px;
