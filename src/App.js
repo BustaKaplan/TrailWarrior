@@ -36,7 +36,6 @@ class App extends Component {
             <div className = "color" id = "white"> #FFFFFF </div>
           </div>
           <CommentBox />
-          <CommentForm />
         </body>
         );
       }
