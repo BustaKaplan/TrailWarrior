@@ -9,7 +9,7 @@ render () {
   const comment = this._getComments();
   console.log({comment});
   const commentCount = `{comment.length}`;
-  
+
   return (
     <div className = "comment-box">
       <h3 className = "comments">COMMENTS</h3>

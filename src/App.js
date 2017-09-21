@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import CommentBox from './CommentBox.js';
 import CommentForm from './CommentForm.js';
+// import Foundation from 'react-foundation';
 
 class App extends Component {
   render() {
@@ -22,7 +23,9 @@ class App extends Component {
               </div>
             </div>
             <div className = "right">
-              <i class="fi-foot"></i>
+              <i className="fi-foot"></i>
+              <i className="fi-foot"></i>
+              <i className="fi-foot"></i>
             </div>
             <div className = "right">
               <img className = "profile-pic" src={require("./unnamed.jpg")} alt="Profile Picture"/>
