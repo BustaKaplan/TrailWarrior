@@ -22,10 +22,11 @@ class App extends Component {
                 <div className = "box"> Search </div>
               </div>
             </div>
-            <div className = "right">
-              <i className="fi-foot"></i>
-              <i className="fi-foot"></i>
-              <i className="fi-foot"></i>
+            <div className = "steps">
+              <div className= "footone"> <i className = "foot" className="fi-foot"></i> </div>
+              <div className = "foottwo"> <i className = "foot" className="fi-foot"></i> </div>
+              <div className = "footthree"> <i className = "foot" className="fi-foot"></i> </div>
+                <div className = "footfour"> <i className = "foot" className="fi-foot"></i> </div>
             </div>
             <div className = "right">
               <img className = "profile-pic" src={require("./unnamed.jpg")} alt="Profile Picture"/>
