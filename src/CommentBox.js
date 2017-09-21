@@ -9,12 +9,12 @@ render () {
   const comment = this._getComments();
   console.log({comment});
   const commentCount = `{comment.length}`;
+  
   return (
     <div className = "comment-box">
-      <h3>COMMENTS</h3>
+      <h3 className = "comments">COMMENTS</h3>
       <h4 className = "commentCount">{this._getCommentsTitle(comment.length)} </h4>
       <div className = "comments">
-        <comments/>
         {comment}
       </div>
       <CommentForm addComment={this._addComment.bind(this)} />
@@ -42,12 +42,12 @@ this.setState({ comments: this.state.comments.concat([comment]) });
 _getComments(){
   return this.state.comments.map((comment) => {
     return (
-      function Comment(){
-      <Comment
-        author = {comment.author}
-        body = {comment.body}
-        key = {comment.id} />
-      }
+        <Comment
+          author = {comment.author}
+          body = {comment.body}
+          key = {comment.id}/>
+
+      // }
     );
   });
 

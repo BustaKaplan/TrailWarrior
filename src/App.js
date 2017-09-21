@@ -7,19 +7,25 @@ import CommentForm from './CommentForm.js';
 class App extends Component {
   render() {
     return (
+      // <head>
+      // <link rel="stylesheet" href={require("./foundation-icons")} />
+      // </head>
         <body>
           <header>
             <div className = "right">
               <h1>Trail Warrior</h1>
               <div className= "subheader"> For the weekend warrior in all of us </div>
               <div className = "boxes">
-                <div className = "box"> Home </div>
+                <a href= "TrailWarrior/colorscheme.html" className = "box"> Home </a>
                 <div className = "box"> Profile </div>
                 <div className = "box"> Search </div>
               </div>
             </div>
             <div className = "right">
-              <img className = "profile-pic" src={"img/unnamed.jpg"} alt="Profile Picture"/>
+              <i class="fi-foot"></i>
+            </div>
+            <div className = "right">
+              <img className = "profile-pic" src={require("./unnamed.jpg")} alt="Profile Picture"/>
               <div className = "search"> Search </div>
             </div>
           </header>
