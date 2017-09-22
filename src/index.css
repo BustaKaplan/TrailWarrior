@@ -1,28 +1,31 @@
 .steps{
+  display: flex;
+  transform: rotate(335deg);
 
-  transform: rotate(30deg);
   }
 .fi-foot{
 
   font-size: 3.5em;
-  padding: 1em;
+  padding: .5em;
+  border: 0em;
   transform: rotate(45deg);
 }
 .footone{
-  transform: rotate(45deg) scaleX(1);
+  transform: rotate(90deg) scaleX(1);
   position: relative;
   /*top: .5em;
   left: .5em;*/
 
   } .footthree{
-  transform: rotate(45deg) scaleX(1);
+  transform: scaleX(1) rotate(95deg) translate(-1em);
   position: relative;
+
   /*top: .5em;
   left: .5em;*/
 
 }
-.foottwo, .footfour{
-  transform: translate(4em) scaleX(-1);
+.foottwo{
+  transform: rotate(65deg) translate(5em) scaleX(-1);
 
 }
 body{
