@@ -11,7 +11,7 @@ class App extends Component {
       // <head>
       // <link rel="stylesheet" href={require("./foundation-icons")} />
       // </head>
-        <body>
+      <body>
           <header>
             <div className = "right">
               <h1>Trail Warrior</h1>
@@ -22,14 +22,17 @@ class App extends Component {
                 <div className = "box"> Search </div>
               </div>
             </div>
-            <div className = "steps">
-              <div className= "footone"> <i className = "foot" className="fi-foot"></i> </div>
-              <div className = "foottwo"> <i className = "foot" className="fi-foot"></i> </div>
-              <div className = "footthree"> <i className = "foot" className="fi-foot"></i> </div>
-            </div>
-            <div className = "right">
-              <img className = "profile-pic" src={require("./unnamed.jpg")} alt="Profile Picture"/>
-              <div className = "search"> Search </div>
+
+            <div className = "left">
+              <div className = "steps">
+                <div className= "footone"> <i className = "foot" className="fi-foot"></i> </div>
+                <div className = "foottwo"> <i className = "foot" className="fi-foot"></i> </div>
+                <div className = "footthree"> <i className = "foot" className="fi-foot"></i> </div>
+              </div>
+              <div>
+                <img className = "profile-pic" src={require("./unnamed.jpg")} alt="Profile Picture"/>
+                <div className = "search"> Search </div>
+              </div>
             </div>
           </header>
 

@@ -4,10 +4,15 @@ import ReactDOM from 'react-dom';
 class Comment extends React.Component {
   render () {
     return(
-      <h1>
-        By: {this.props.author}<br />
-        {this.props.body}
-      </h1>
+      <div className = "onecomment">
+        <div className = "commentauthor">
+          By: {this.props.author} on: {this.props.date}<br/>
+
+        </div>
+        <div className = "commentbody">
+          {this.props.body}
+        </div>
+      </div>
     )
   }
 }

@@ -1,23 +1,24 @@
 .steps{
+  padding-top: 5%;
+  padding-left: 15%;
   display: flex;
-  transform: rotate(335deg);
+  transform: rotate(340deg);
 
   }
 .fi-foot{
-
   font-size: 3.5em;
   padding: .5em;
   border: 0em;
   transform: rotate(45deg);
 }
 .footone{
-  transform: rotate(90deg) scaleX(1);
+  transform: rotate(90deg) scaleX(1) translate(1.4em);
   position: relative;
   /*top: .5em;
   left: .5em;*/
 
   } .footthree{
-  transform: scaleX(1) rotate(95deg) translate(-1em);
+  transform: scaleX(1) rotate(95deg) translate(-1.75em);
   position: relative;
 
   /*top: .5em;
@@ -25,7 +26,7 @@
 
 }
 .foottwo{
-  transform: rotate(65deg) translate(5em) scaleX(-1);
+  transform: rotate(65deg) translate(4em) scaleX(-1);
 
 }
 body{
@@ -41,6 +42,10 @@ body{
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
+}
+.left{
+  display: flex;
+  align-items: baseline;
 }
 .subheader{
   color: #669933;
@@ -119,11 +124,39 @@ H4{
 #green{
   background-color: #669933;
 }
-/*body {
-  margin: 10px;
-  padding: 0;
-  font-family: sans-serif;
-}*/
-.commentCount, .comments{
+
+.comment-form-fields{
+  display: flex;
+  align-self: flex-start;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+.name-form-field{
+  margin-right: .5em;
+  margin-left: .5em;
+}
+.story-form-field{
+
+}
+.commentCount, .comments, .call-to-post{
   color: #49475B;
+}
+.call-to-post{
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.onecomment{
+  padding: .5em;
+  background-color: white;
+  width: 35%;
+  margin: .5em;
+}
+.commentauthor{
+  color: #49475B;
+
+
+}
+.commentbody{
+  color: #953255;
+  font-size: 1.5em;
 }

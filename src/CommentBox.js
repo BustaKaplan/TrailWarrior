@@ -26,8 +26,8 @@ constructor() {
   this.state = {
     showComments: false,
     comments: [
-      {id: 1, author: 'Michael Perez', body: 'Awesome Pictures!'},
-      {id: 2, author: 'Tofu Kaplan', body: 'Looks like fun but happy you are home :)'}
+      {id: 1, author: 'Michael Perez', date: "9/10/17", body: 'Awesome Pictures!'},
+      {id: 2, author: 'Tofu Kaplan', date: "9/23/17", body: 'Looks like fun but happy you are home :)'}
     ]
   };
 }
@@ -44,29 +44,14 @@ _getComments(){
     return (
         <Comment
           author = {comment.author}
+          date = {comment.date}
           body = {comment.body}
           key = {comment.id}/>
 
       // }
     );
   });
-
-  // const commentList = [
-  //   {id: 1, author: 'Michael Perez', body: 'Awesome Pictures!'},
-  //   {id: 2, author: 'Tofu Kaplan', body: 'Looks like fun but happy you are home :)'}
-  // ];
-
-  // return commentList.map((comment) => {
-  //   function Comment() {
-  //     return(
-  //       <Comment
-  //         author = {comment.author} body = {comment.body} key = {comment.id}/>
-  //   );
-  // }
-  // });
-
 }
-
 
 _getCommentsTitle(commentCount){
   if (commentCount === 1){
