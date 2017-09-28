@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import DateComponent from './DateComponent.js';
 
 class CommentForm extends React.Component {
   render() {
@@ -18,12 +19,14 @@ class CommentForm extends React.Component {
       </form>
     );
   }
+
   _handleSubmit(event){
     event.preventDefault();
       let author = this._author;
       let body = this._body;
-      let date = this._date;
-      this.props.addComment(author.value, date.value, body.value);
+      let date = <DateComponent/>;
+      this.props.addComment(author.value, body.value, date.value);
   }
+
 }
 export default CommentForm;

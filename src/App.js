@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import CommentBox from './CommentBox.js';
 import CommentForm from './CommentForm.js';
+import Map from './Map.js';
 // import Foundation from 'react-foundation';
 
 class App extends Component {
@@ -37,16 +38,12 @@ class App extends Component {
           </header>
 
           <h2>The Never Summer Wilderness</h2>
-          <img className= "trail photo" src={require('./Template.jpg')} alt="Trail Photo" width={500}/>
-          <h4> Trail Miles: 19 <br/> Elevation Gain: 6,000 <br/> Location: Grand Lake, CO</h4>
-          <h4> Color Scheme </h4>
-          <div className="color-combos">
-            <div className = "color" id="green"> #669933 </div>
-            <div className = "color" id = "gray"> #49475B </div>
-            <div className = "color" id = "purple"> #953255 </div>
-            <div className = "color" id = "black"> #14080E </div>
-            <div className = "color" id = "white"> #FFFFFF </div>
+          <div className = "graphics">
+            <img className= "trail photo" src={require('./Template.jpg')} alt="Trail Photo" width={500}/>
+            <Map/>
           </div>
+          <h4> Trail Miles: 19 <br/> Elevation Gain: 6,000 <br/> Location: Grand Lake, CO</h4>
+
           <CommentBox />
         </body>
         );

@@ -124,7 +124,10 @@ H4{
 #green{
   background-color: #669933;
 }
-
+.graphics{
+  display: flex;
+  align-items:baseline;
+}
 .comment-form-fields{
   display: flex;
   align-self: flex-start;
