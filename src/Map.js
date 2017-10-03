@@ -8,7 +8,7 @@ render() {
     return (
       <Map
         google={this.props.google}
-        style={{width: '33%', position: 'absolute'}}
+        style={{width: '45%', height: '75%',position: 'absolute'}}
         // style={style}
           initialCenter={{
             lat: 40.3548,

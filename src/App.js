@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import CommentBox from './CommentBox.js';
 import CommentForm from './CommentForm.js';
+import DateComponent from './DateComponent.js';
 import Map from './Map.js';
 // import Foundation from 'react-foundation';
 
@@ -39,12 +40,13 @@ class App extends Component {
 
           <h2>The Never Summer Wilderness</h2>
           <div className = "graphics">
-            <img className= "trail photo" src={require('./Template.jpg')} alt="Trail Photo" width={500}/>
+            <img className= "trail-photo" src={require('./Template.jpg')} alt="Trail Photo" width={500}/>
             <Map/>
           </div>
           <h4> Trail Miles: 19 <br/> Elevation Gain: 6,000 <br/> Location: Grand Lake, CO</h4>
 
           <CommentBox />
+          {console.log("the date is" + <DateComponent/>)}
         </body>
         );
       }

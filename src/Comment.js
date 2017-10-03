@@ -7,7 +7,7 @@ class Comment extends React.Component {
     return(
       <div className = "onecomment">
         <div className = "commentauthor">
-          By: {this.props.author} on: {this.props.date}<br/>
+          By: {this.props.author} on: {this.props.date} <br/>
         </div>
         <div className = "commentbody">
           {this.props.body}

@@ -26,6 +26,7 @@ class CommentForm extends React.Component {
       let body = this._body;
       let date = <DateComponent/>;
       this.props.addComment(author.value, body.value, date.value);
+
   }
 
 }

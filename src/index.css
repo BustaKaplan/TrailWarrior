@@ -126,7 +126,10 @@ H4{
 }
 .graphics{
   display: flex;
-  align-items:baseline;
+  align-items:flex-start;
+}
+.trail-photo{
+  padding-right: 10%;
 }
 .comment-form-fields{
   display: flex;

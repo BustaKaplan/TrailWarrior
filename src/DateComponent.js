@@ -3,16 +3,16 @@ import React from 'react';
 class DateComponent extends React.Component {
 
     render() {
-      var today = new Date();
-      var dd = today.getDate();
-      var mm = today.getMonth()+1;
-      var yyyy = today.getFullYear();
+      var dateObj = new Date();
+      var month = dateObj.getUTCMonth() + 1; //months from 1-12
+      var day = dateObj.getUTCDate();
+      var year = dateObj.getUTCFullYear();
 
-      today = mm + '/' + dd + '/' + yyyy;
+      var newdate = year + "/" + month + "/" + day;
 
         return (
 
-          today
+          newdate
         );
     }
 }
