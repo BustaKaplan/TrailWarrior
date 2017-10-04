@@ -5,13 +5,13 @@ import CommentBox from './CommentBox.js';
 import CommentForm from './CommentForm.js';
 import DateComponent from './DateComponent.js';
 import Map from './Map.js';
-// import Foundation from 'react-foundation';
+import Star from './Star.js';
+
 
 class App extends Component {
   render() {
     return (
       // <head>
-      // <link rel="stylesheet" href={require("./foundation-icons")} />
       // </head>
       <body>
           <header>
@@ -44,9 +44,11 @@ class App extends Component {
             <Map/>
           </div>
           <h4> Trail Miles: 19 <br/> Elevation Gain: 6,000 <br/> Location: Grand Lake, CO</h4>
-
+        <div className = "user-input">
           <CommentBox />
-          {console.log("the date is" + <DateComponent/>)}
+          {console.log("the date is" + <DateComponent />)}
+          <Star />
+        </div>
         </body>
         );
       }

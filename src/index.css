@@ -154,15 +154,41 @@ H4{
 .onecomment{
   padding: .5em;
   background-color: white;
-  width: 35%;
   margin: .5em;
 }
 .commentauthor{
   color: #49475B;
-
-
 }
+
 .commentbody{
   color: #953255;
   font-size: 1.5em;
+}
+.user-input{
+  display: flex;
+  justify-content: space-between;
+}
+.star-box{
+  margin-top: 5%;
+  margin-right: 10%;
+  color: white;
+  width: 30%;
+  font-size: 3em;
+  display: inline-flex;
+  justify-content: space-around;
+}
+.star-one:hover{
+  color: yellow;
+}
+.star-two:hover{
+  color: yellow;
+}
+.star-three:hover{
+  color: yellow;
+}
+.star-four:hover{
+  color: yellow;
+}
+.star-five:hover{
+  color: yellow;
 }
