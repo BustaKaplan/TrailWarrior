@@ -177,6 +177,9 @@ H4{
   display: inline-flex;
   justify-content: space-around;
 }
+.splash{
+  width: 100%;
+}
 .star-one:hover{
   color: yellow;
 }
