@@ -6,23 +6,66 @@ import CommentForm from './CommentForm.js';
 import DateComponent from './DateComponent.js';
 import Map from './Map.js';
 import Star from './Star.js';
+import { BrowserRouter } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 class App extends Component {
   render() {
+    const Profile = () => (
+      <div>
+        <ul>
+          <li>Name: Chelsea</li>
+          <li>City: Saint Louis</li>
+          <li>Age: 25</li>
+        </ul>
+      </div>
+    )
+    const Search = () => (
+      <div>
+        <ul>
+          <li>Whacha looking for</li>
+          <li>City: Saint Louis</li>
+          <li>Age: 25</li>
+        </ul>
+      </div>
+    )
+    const Home = () => (
+      <div>
+      </div>
+    )
+      const Main = () => (
+        <main>
+          <Switch>
+            <Route exact path='/' component={Home}/>
+            <Route path='/profile' component={Profile}/>
+            <Route path='/search' component={Search}/>
+          </Switch>
+        </main>
+    )
+    const Header = () => (
+      <header>
+        <nav>
+          <ul className = "boxes">
+            <li className = "box"><Link to='/'>Home</Link></li>
+            <li className = "box" ><Link to='/profile'>Profile</Link></li>
+            <li className = "box"><Link to='/search'>Search</Link></li>
+          </ul>
+        </nav>
+      </header>
+    )
+
+
     return (
-      // <head>
-      // </head>
+
       <body>
           <header>
             <div className = "right">
               <h1>Trail Warrior</h1>
               <div className= "subheader"> For the weekend warrior in all of us </div>
-              <div className = "boxes">
-                <a href= "TrailWarrior/colorscheme.html" className = "box"> Home </a>
-                <div className = "box"> Profile </div>
-                <div className = "box"> Search </div>
-              </div>
+              <Header/>
+              <Main/>
             </div>
 
             <div className = "left">
