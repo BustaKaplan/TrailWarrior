@@ -12,8 +12,6 @@ class Search extends React.Component {
     const Main = () => (
       <main>
         <Switch>
-
-
           <Route path='/search/neversummerwilderness' component={Neversummerwilderness}/>
           <Route path='/search/twinsisterspeak' component={Twinsisterspeak}/>
           <Route path='/search/katytrail' component={Katytrail}/>

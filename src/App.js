@@ -6,7 +6,6 @@ import CommentBox from './CommentBox.js';
 import CommentForm from './CommentForm.js';
 import DateComponent from './DateComponent.js';
 import Profile from './Profile.js';
-import Neversummerwilderness from './Neversummerwilderness.js';
 import Map from './Map.js';
 import Star from './Star.js';
 import Search from './Search.js';
@@ -17,30 +16,25 @@ import { Link } from 'react-router-dom'
 
 class App extends Component {
   render() {
-
-
       const Main = () => (
         <main>
           <Switch>
             <Route exact path='/' component={Home}/>
             <Route path='/profile' component={Profile}/>
             <Route path='/search' component={Search}/>
-            <Route path='/trailone' component={Neversummerwilderness}/>
-
           </Switch>
         </main>
     )
-    const Header = () => (
-      <header>
+    const Boxes = () => (
+      <boxes>
         <nav>
           <ul className = "boxes">
             <li className = "box"><Link to='/'>Home</Link></li>
             <li className = "box" ><Link to='/profile'>Profile</Link></li>
             <li className = "box"><Link to='/search'>Search</Link></li>
-            <li className = "box"><Link to='/trailone'>The Never Summer Wilderness</Link></li>
           </ul>
         </nav>
-      </header>
+      </boxes>
     )
 
 
@@ -51,7 +45,7 @@ class App extends Component {
             <div className = "right">
               <h1>Trail Warrior</h1>
               <div className= "subheader"> For the weekend warrior in all of us </div>
-              <Header/>
+              <Boxes/>
             </div>
 
             <div className = "left">

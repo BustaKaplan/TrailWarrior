@@ -6,6 +6,7 @@ class Home extends React.Component {
     return(
       <body>
           <img className= "splash" src={require('./Splash.jpg')} alt="Splash"/>
+          <div className = "splashquestion"> Where is your next adventure? </div>
       </body>
     );
   }

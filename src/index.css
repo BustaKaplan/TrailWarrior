@@ -32,7 +32,8 @@
 body{
   margin: 10px;
 }
-  header{
+header{
+  height: 10em;
   background-color: white;
   color: #669933;
   margin: 0px;
@@ -179,6 +180,7 @@ H4{
 }
 .splash{
   width: 100%;
+  margin: 0%;
 }
 .star-one:hover{
   color: yellow;
@@ -194,4 +196,15 @@ H4{
 }
 .star-five:hover{
   color: yellow;
+}
+.splashquestion{
+  color: white;
+  font-weight: bold;
+  padding: 1em;
+  background-color: rgba(0,0,0,.6);
+  display: inline-block;
+  position: relative;
+  top: -25em;
+  right: -27em;
+  z-index: 2;
 }
