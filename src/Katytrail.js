@@ -5,16 +5,16 @@ import CommentBox from './CommentBox.js';
 import Star from './Star.js';
 import DateComponent from './DateComponent.js';
 
-class Trailone extends React.Component {
+class Katytrail extends React.Component {
   render () {
     return(
       <body>
-          <h2>The Never Summer Wilderness</h2>
+          <h2>The Katy Trail</h2>
           <div className = "graphics">
-            <img className= "trail-photo" src={require('./Template.jpg')} alt="Trail Photo" width={500}/>
+            <img className= "trail-photo" src={require('./Katytrail.jpg')} alt="Trail Photo" width={500}/>
             <Map/>
           </div>
-          <h4> Trail Miles: 19 <br/> Elevation Gain: 6,000 <br/> Location: Grand Lake, CO</h4>
+          <h4> Trail Miles: 238 <br/> Elevation Gain: 435 feet <br/> Location: St. Charles, Mo </h4>
         <div className = "user-input">
           <CommentBox />
           {console.log("the date is" + <DateComponent />)}
@@ -25,4 +25,4 @@ class Trailone extends React.Component {
       }
   }
 
-export default Trailone;
+export default Katytrail;

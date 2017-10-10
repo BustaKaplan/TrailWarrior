@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Switch, Route } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import Trailone from './Trailone.js';
+import Neversummerwilderness from './Neversummerwilderness.js';
+import Twinsisterspeak from './Twinsisterspeak.js';
+import Katytrail from './Katytrail.js';
+
 
 class Search extends React.Component {
   render () {
@@ -11,9 +14,9 @@ class Search extends React.Component {
         <Switch>
 
 
-          <Route path='/neversummerwilderness' component={Trailone}/>
-          <Route path='/twinsisterspeak' component={Trailone}/>
-          <Route path='/katytrail' component={Trailone}/>
+          <Route path='/search/neversummerwilderness' component={Neversummerwilderness}/>
+          <Route path='/search/twinsisterspeak' component={Twinsisterspeak}/>
+          <Route path='/search/katytrail' component={Katytrail}/>
 
         </Switch>
       </main>
@@ -22,9 +25,9 @@ class Search extends React.Component {
         <traillist>
           <div>
             <ul className = "trails">
-              <li className = "trail" ><Link to='/neversummerwilderness'>The Never Summer Wilderness</Link></li>
-              <li className = "trail"><Link to='/twinsisterspeak'>Twin Sisters Peak</Link></li>
-              <li className = "trail"><Link to='/katytrail'>Katy Trail</Link></li>
+              <li className = "trail" ><Link to='/search/neversummerwilderness'>The Never Summer Wilderness</Link></li>
+              <li className = "trail"><Link to='/search/twinsisterspeak'>Twin Sisters Peak</Link></li>
+              <li className = "trail"><Link to='/search/katytrail'>Katy Trail</Link></li>
             </ul>
           </div>
         </traillist>

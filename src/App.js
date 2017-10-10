@@ -6,7 +6,7 @@ import CommentBox from './CommentBox.js';
 import CommentForm from './CommentForm.js';
 import DateComponent from './DateComponent.js';
 import Profile from './Profile.js';
-import Trailone from './Trailone.js';
+import Neversummerwilderness from './Neversummerwilderness.js';
 import Map from './Map.js';
 import Star from './Star.js';
 import Search from './Search.js';
@@ -25,7 +25,7 @@ class App extends Component {
             <Route exact path='/' component={Home}/>
             <Route path='/profile' component={Profile}/>
             <Route path='/search' component={Search}/>
-            <Route path='/trailone' component={Trailone}/>
+            <Route path='/trailone' component={Neversummerwilderness}/>
 
           </Switch>
         </main>
