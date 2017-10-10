@@ -197,14 +197,18 @@ H4{
 .star-five:hover{
   color: yellow;
 }
-.splashquestion{
-  color: white;
-  font-weight: bold;
-  padding: 1em;
-  background-color: rgba(0,0,0,.6);
-  display: inline-block;
-  position: relative;
-  top: -25em;
-  right: -27em;
-  z-index: 2;
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    color: white !important;
+    position: absolute;
+    font-weight: bold;
+    width: 10em;
+    background-color: rgba(0,0,0,.6);
+    top: 45%;
+    left: 0;
+    display: inline-block;
+
 }
