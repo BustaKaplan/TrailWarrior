@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Trail from './Trail.js';
 
 class Profile extends React.Component {
   render () {
     return(
-      <img className = "profile-pic" src={require("./unnamed.jpg")} alt="Profile Picture"/>
+      <div>
+        <Trail/>
+      </div>
     )
   }
 }

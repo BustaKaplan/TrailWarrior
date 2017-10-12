@@ -5,9 +5,9 @@ import Comment from './Comment.js';
 
 class Trail extends React.Component {
   render () {
-    const xxx = this._getTrails();
+    const test = this._getTrails();
     return(
-      <div>{xxx}</div>
+      <div>{test}</div>
     )
   }
   _getTrails(){
@@ -25,5 +25,5 @@ class Trail extends React.Component {
     });
   }
 }
-
+console.log("TEST" + <Trail/>)
 export default Trail;
