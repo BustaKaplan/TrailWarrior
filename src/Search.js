@@ -16,26 +16,14 @@ class Search extends React.Component {
           <Route path='/search/neversummerwilderness' component={Neversummerwilderness}/>
           <Route path='/search/twinsisterspeak' component={Twinsisterspeak}/>
           <Route path='/search/katytrail' component={Katytrail}/>
+          <Route path= '/search' component = {Traillist}/>
         </Switch>
       </main>
     )
-    const Traillist = () => (
-      <traillist>
-        <div>
-          <h4> Colorado </h4>
-            <li className = "trail" ><Link to='/search/neversummerwilderness'>The Never Summer Wilderness</Link></li>
-            <li className = "trail" ><Link to='/search/twinsisterspeak'>Twin Sisters Peak</Link></li>
-          <h4> Missouri </h4>
-            <li className = "trail"><Link to='/search/katytrail'>Katy Trail</Link></li>
-        </div>
-      </traillist>
-    )
+
 
     return(
       <div>
-        <div>
-          <Traillist/>
-        </div>
         <div>
           <Main/>
         </div>

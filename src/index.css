@@ -178,6 +178,14 @@ H4{
   display: inline-flex;
   justify-content: space-around;
 }
+.box-search{
+  width: 100%;
+}
+.img-responsive{
+  width: 100%;
+  margin: 0px;
+  border: 0px;
+}
 .splash{
   width: 100%;
   margin: 0%;
@@ -205,10 +213,10 @@ H4{
     color: white !important;
     position: absolute;
     font-weight: bold;
-    width: 10em;
     background-color: rgba(0,0,0,.6);
-    top: 45%;
+    top: -35%;
     left: 0;
-    display: inline-block;
+    width: 20%;
+    margin: 40%;
 
 }
