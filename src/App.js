@@ -43,12 +43,11 @@ class App extends Component {
       <body>
           <div className = "navbar navbar-default">
             <div className = "right">
-              <h1 className = 'navbar-brand'>Trail Warrior</h1>
+              <div className = 'navbar-brand'>Trail Warrior</div>
               <div className= "subheader"> For the weekend warrior in all of us </div>
               <Boxes/>
             </div>
-
-            <div className = "left">
+            <div className="nav navbar-nav navbar-right">
               <div className = "steps">
                 <div className= "footone"> <i className = "foot" className="fi-foot"></i> </div>
                 <div className = "foottwo"> <i className = "foot" className="fi-foot"></i> </div>
@@ -56,7 +55,10 @@ class App extends Component {
               </div>
               <div>
                 <img className = "profile-pic" src={require("./unnamed.jpg")} alt="Profile Picture"/>
-                <div className = "search"> Search </div>
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search"></input>
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
               </div>
             </div>
           </div>

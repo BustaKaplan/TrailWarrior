@@ -11,8 +11,8 @@ class Neversummerwilderness extends React.Component {
       <body>
           <h2>The Never Summer Wilderness</h2>
           <div className = "graphics">
-            <img className= "trail-photo" src={require('./neversummer.jpg')} alt="Trail Photo" width={500}/>
-            <Map/>
+            <img className= "trail-photo col-4" src={require('./neversummer.jpg')} alt="Trail Photo" width={500}/>
+              <Map />
           </div>
           <h4> Trail Miles: 19 <br/> Elevation Gain: 6,000 <br/> Location: Grand Lake, CO </h4>
         <div className = "user-input">

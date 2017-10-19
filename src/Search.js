@@ -19,7 +19,6 @@ class Search extends React.Component {
           <Route path='/search/katytrail' component={Katytrail}/>
           <Route path= '/search' component = {Traillist}/>
         </Switch>
-        </Trails>
       </main>
     )
 

@@ -57,10 +57,6 @@ header{
 }
 .box{
   padding: .25em;
-  border: .25em;
-  border-width: thin;
-  border-style: solid;
-  border-color: #953255;
   color: white;
   background-color: #669933;
   margin: .5em;
