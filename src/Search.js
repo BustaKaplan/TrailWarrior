@@ -6,6 +6,7 @@ import Neversummerwilderness from './Neversummerwilderness.js';
 import Twinsisterspeak from './Twinsisterspeak.js';
 import Katytrail from './Katytrail.js';
 import Traillist from './Traillist.js';
+import Trail from './Trail.js';
 
 
 class Search extends React.Component {
@@ -18,6 +19,7 @@ class Search extends React.Component {
           <Route path='/search/katytrail' component={Katytrail}/>
           <Route path= '/search' component = {Traillist}/>
         </Switch>
+        </Trails>
       </main>
     )
 

@@ -27,13 +27,13 @@ class App extends Component {
     )
     const Boxes = () => (
       <boxes>
-        <nav>
-          <ul className = "boxes">
+        <div>
+          <ul className = "boxes"  className = 'nav navbar-nav'>
             <li className = "box"><Link to='/'>Home</Link></li>
             <li className = "box" ><Link to='/profile'>Profile</Link></li>
             <li className = "box"><Link to='/search'>Search</Link></li>
           </ul>
-        </nav>
+        </div>
       </boxes>
     )
 
@@ -41,9 +41,9 @@ class App extends Component {
     return (
 
       <body>
-          <header>
+          <div className = "navbar navbar-default">
             <div className = "right">
-              <h1>Trail Warrior</h1>
+              <h1 className = 'navbar-brand'>Trail Warrior</h1>
               <div className= "subheader"> For the weekend warrior in all of us </div>
               <Boxes/>
             </div>
@@ -59,7 +59,7 @@ class App extends Component {
                 <div className = "search"> Search </div>
               </div>
             </div>
-          </header>
+          </div>
           <Main/>
         </body>
         );
