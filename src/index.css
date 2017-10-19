@@ -1,15 +1,20 @@
 .steps{
   padding-top: 5%;
-  padding-left: 15%;
   display: flex;
+  position: absolute;
+  left: 65%;
+  top: -8%;
   transform: rotate(340deg);
-
   }
 .fi-foot{
+  color: #669933;
   font-size: 3.5em;
   padding: .5em;
   border: 0em;
   transform: rotate(45deg);
+}
+.pic-search{
+  margin-right: 5%;
 }
 .footone{
   transform: rotate(90deg) scaleX(1) translate(1.4em);
@@ -65,6 +70,8 @@ header{
   border-radius: 50%;
   width: 6em;
   text-align: right;
+  margin-left: 35%;
+  margin-bottom: 5%;
 }
 .search{
   margin-top: .5em;
@@ -182,9 +189,11 @@ H4{
   margin: 0px;
   border: 0px;
 }
+
 .splash{
   width: 100%;
   margin: 0%;
+  border: none;
 }
 .star-one:hover{
   color: yellow;

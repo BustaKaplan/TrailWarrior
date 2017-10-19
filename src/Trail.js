@@ -8,7 +8,7 @@ class Trail extends React.Component {
   render () {
     // const test = this._getTrails();
     return(
-        <li className = "trail" ><Link to={this.props.link}>{this.props.name}, {this.props.state}</Link></li>
+        <li className = "trail list-group-item" ><Link to={this.props.link}>{this.props.name}, {this.props.state}</Link></li>
 
     )
   }

@@ -43,7 +43,7 @@ class App extends Component {
       <body>
           <div className = "navbar navbar-default">
             <div className = "right">
-              <div className = 'navbar-brand'>Trail Warrior</div>
+              <div className = ' subheader'>Trail Warrior</div>
               <div className= "subheader"> For the weekend warrior in all of us </div>
               <Boxes/>
             </div>
@@ -53,11 +53,11 @@ class App extends Component {
                 <div className = "foottwo"> <i className = "foot" className="fi-foot"></i> </div>
                 <div className = "footthree"> <i className = "foot" className="fi-foot"></i> </div>
               </div>
-              <div>
+              <div className = "pic-search">
                 <img className = "profile-pic" src={require("./unnamed.jpg")} alt="Profile Picture"/>
-                <form class="form-inline">
-                  <input class="form-control mr-sm-2" type="text" placeholder="Search"></input>
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <form className="form-inline">
+                  <input className="form-control mr-sm-2" type="text" placeholder="Search"></input>
+                  <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
               </div>
             </div>
