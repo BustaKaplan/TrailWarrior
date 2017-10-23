@@ -29,9 +29,10 @@ class App extends Component {
       <boxes>
         <div>
           <ul className = "boxes"  className = 'nav navbar-nav'>
-            <li className = "box"><Link to='/'>Home</Link></li>
-            <li className = "box" ><Link to='/profile'>Profile</Link></li>
-            <li className = "box"><Link to='/search'>Search</Link></li>
+
+            <li ><Link to='/' className = " box btn btn-default">Home</Link></li>
+            <li ><Link to='/profile' className = "box btn btn-default">Profile</Link></li>
+            <li><Link to='/search' className = "box btn btn-default">Search</Link></li>
           </ul>
         </div>
       </boxes>
@@ -43,7 +44,7 @@ class App extends Component {
       <body>
           <div className = "navbar navbar-default">
             <div className = "right">
-              <div className = ' subheader'>Trail Warrior</div>
+              <div className = 'header'>Trail Warrior</div>
               <div className= "subheader"> For the weekend warrior in all of us </div>
               <Boxes/>
             </div>

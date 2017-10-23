@@ -53,6 +53,11 @@ header{
   display: flex;
   align-items: baseline;
 }
+.header{
+  font-size: 3em;
+  color: #669933;
+  font-family: 'Rock Salt', cursive;
+}
 .subheader{
   color: #669933;
   margin-left: .5em;
@@ -73,17 +78,16 @@ header{
   margin-left: 35%;
   margin-bottom: 5%;
 }
-.search{
-  margin-top: .5em;
-  background-color: #49475B;
-  color:#14080E;
 
-}
 
 h1{
   font-family: 'Scope One', serif;
   background-color: white;
   color: #669933;
+
+}
+.purple{
+  color: #953255;
 
 }
 body{
@@ -148,6 +152,9 @@ H4{
 .story-form-field{
 
 }
+.star-container{
+  padding-top: 10%;
+}
 .commentCount, .comments, .call-to-post{
   color: #49475B;
 }
@@ -171,6 +178,8 @@ H4{
 .user-input{
   display: flex;
   justify-content: space-between;
+  margin-top: 7%;
+  margin-right: 20%;
 }
 .star-box{
   margin-top: 5%;
@@ -223,5 +232,9 @@ H4{
     left: 0;
     width: 20%;
     margin: 40%;
+
+}
+.white-test{
+  color: white !important;
 
 }

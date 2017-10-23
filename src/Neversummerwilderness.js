@@ -14,11 +14,13 @@ class Neversummerwilderness extends React.Component {
             <img className= "trail-photo col-4" src={require('./neversummer.jpg')} alt="Trail Photo" width={500}/>
               <Map />
           </div>
-          <h4> Trail Miles: 19 <br/> Elevation Gain: 6,000 <br/> Location: Grand Lake, CO </h4>
+          <h4> Trail Miles: 19 <br/> Elevation Gain: 6,000 <br/> Location: Grand Lake, CO <br/></h4>
         <div className = "user-input">
           <CommentBox />
           {console.log("the date is" + <DateComponent />)}
+          <div className= 'star-container'>
           <Star />
+          </div>
         </div>
         </body>
         );
